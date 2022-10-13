@@ -13,5 +13,5 @@ __It contains these following files__
 
           -------------------- ***Advanced Tasks*** --------------------
 - [100-intel](https://github.com/8srael/alx-low_level_programming/blob/main/0x00-hello_world/100-intel) - generates the assembly code (Intel syntax) of a C code and save it in an output file.The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension `.s` instead of `.c` .
-- [101-quote.c](https://github.com/8srael/alx-low_level_programming/blob/main/0x00-hello_world/101-quote.c) - prints exactly `and that piece of art is useful\" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error . You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts . Your program should 1 . Your program should compile without any warnings when using the -Wall gcc option .
+- [101-quote.c](https://github.com/8srael/alx-low_level_programming/blob/main/0x00-hello_world/101-quote.c) - prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error . You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts . Your program should 1 . Your program should compile without any warnings when using the -Wall gcc option .
 
