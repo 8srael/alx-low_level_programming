@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
-/*
- * main -  prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19
+
+/**
+ * main - prints exactly "and that piece of art is useful" 
+ * - Dora Korpar, 2015-10-19",
  * followed by a new line, to the standard error .
  *
- * The program should compile without any warnings when using the -Wall gcc option
  * we used "write" function of the library "<unistd.h>"
  *
  * Return: always 1 (Success)
