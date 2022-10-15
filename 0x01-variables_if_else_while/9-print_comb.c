@@ -10,12 +10,12 @@
 
 int main(void)
 {
-	char carac;
+	int carac;
 
-	for (carac = '0' ; carac < ':' ; carac++)
+	for (carac = 48 ; carac < 58 ; carac++)
 	{
 		putchar(carac);
-		if (carac != '9')
+		if (carac != 57)
 		{
 			putchar(',');
 			putchar(' ');
