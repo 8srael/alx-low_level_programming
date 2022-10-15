@@ -1,9 +1,12 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of two digits.
+ * main - prints all possible different combinations of two two-digits.
+ * The numbers should range from 0 to 99
+ * All numbers should be printed with two digits. 1 should be printed as 01
+ * ...
  * The two digits must be different
  * by using putchar function.
- * Maximum using putchar : 5
+ * Maximum using putchar : 8
  *
  * Return: 0 if program runs succesfully.
 */
