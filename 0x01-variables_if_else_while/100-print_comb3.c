@@ -1,24 +1,30 @@
 #include <stdio.h>
 /**
- * main - prints the alphabet in lowercase, followed by a new line
+ * main - prints all possible different combinations of two digits.
+ * The two digits must be different
  * by using putchar function.
+ * Maximum using putchar : 5
+ *
  * Return: 0 if program runs succesfully.
 */
 
 int main(void)
 {
-	char carac1, carac2;
+	int carac1, carac2;
 
-	for (carac1 = '0' ; carac1 <= '9' ; carac1++)
+	for (carac1 = 48 ; carac1 < 58 ; carac1++)
 	{
-		for (carac2 = '0' ; carac2 <= '9' ; carac2++)
+		for (carac2 = carac1 + 1 ; carac2 < 58 ; carac2++)
 		{
-			putchar(carac1);
-			putchar(carac2);
-			if (carac1 != '9' || carac2 != '9')
+			if (carac1 != carac2)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(carac1);
+				putchar(carac2);
+				if (carac1 != 56 || carac2 != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
