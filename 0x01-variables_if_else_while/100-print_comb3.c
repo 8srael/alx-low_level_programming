@@ -16,15 +16,12 @@ int main(void)
 	{
 		for (carac2 = carac1 + 1 ; carac2 < 58 ; carac2++)
 		{
-			if (carac1 != carac2)
+			putchar(carac1);
+			putchar(carac2);
+			if (carac1 != 56 || carac2 != 57)
 			{
-				putchar(carac1);
-				putchar(carac2);
-				if (carac1 != 56 || carac2 != 57)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
