@@ -4,8 +4,7 @@ ___Mandatory Tasks___
 
 ___for task 0 and 1 : This program will assign a random number to the variable n each time it is executed__
 
-- [0-positive_or_negative.c](https://github.com/8srael/alx-low_level_programming/blob/main/
-0x01-variables_if_else_while/0-positive_or_negative.c) - print whether the number stored in the variable `n` is positive or negative.
+- [0-positive_or_negative.c](https://github.com/8srael/alx-low_level_programming/tree/main/0x01-variables_if_else_while/0-positive_or_negative.c) - print whether the number stored in the variable `n` is positive or negative.
 - [1-last_digit.c](https://github.com/8srael/alx-low_level_programming/blob/main/
 0x01-variables_if_else_while/1-last_digit.c) -  print the last digit of the number stored in the variable `n`.
 - [2-print_alphabet.c](https://github.com/8srael/alx-low_level_programming/blob/main/
