@@ -44,4 +44,11 @@ int _isalpha(int c);
 */
 int print_sign(int n);
 
+/**
+ * _abs - function that computes the absolute value of an integer.
+ * @n : parameter that you want to know his absolute value
+ * Return: absolute value of n
+*/
+int _abs(int n);
+
 #endif
