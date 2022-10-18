@@ -22,14 +22,14 @@ void print_alphabet_x10(void);
 
 /**
  * _islower - function that checks for lowercase character
- * @c : parameter that you want to check
+ * @c : parameter that we want to check
  * Return: 1 if c is lowercase , 0 otherwise
 */
 int _islower(int c);
 
 /**
  * _islower - function that checks for alphabetic character
- * @c : parameter that you want to check
+ * @c : parameter that we want to check
  * Return: 1 if c is a letter lowwercase or uppercase
  * 0 otherwise.
 */
@@ -37,7 +37,7 @@ int _isalpha(int c);
 
 /**
  * print_sign - function that prints the sign of a number
- * @n : parameter that you want to print his sign
+ * @n : parameter that we want to print his sign
  * Return: 1 and prints + if n is greater than zero
  * 0 and prints 0 if n is zero
  * -1 and prints - if n is less than zero
@@ -46,9 +46,16 @@ int print_sign(int n);
 
 /**
  * _abs - function that computes the absolute value of an integer.
- * @n : parameter that you want to know his absolute value
+ * @n : parameter that we want to know his absolute value
  * Return: absolute value of n
 */
 int _abs(int n);
+
+/**
+ * print_last_digit - function that prints the last digit of a number.
+ * @number : parameter that we want to print his last digit
+ * Return: the value of the last digit.
+*/
+int print_last_digit(int number);
 
 #endif
