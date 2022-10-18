@@ -3,7 +3,6 @@
 /**
  * main - prints "_putchar", followed by a new line.
  *
- *
  * Return: 0 if program runs succesfully.
 */
 
