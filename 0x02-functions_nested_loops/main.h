@@ -27,4 +27,12 @@ void print_alphabet_x10(void);
 */
 int _islower(int c);
 
+/**
+ * _islower - function that checks for alphabetic character
+ * @c : parameter that you want to check
+ * Return: 1 if c is a letter lowwercase or uppercase
+ * 0 otherwise.
+*/
+int _isalpha(int c);
+
 #endif
