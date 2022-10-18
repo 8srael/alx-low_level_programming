@@ -68,4 +68,12 @@ void jack_bauer(void);
  * times_table - function that prints the 9 times table, starting with 0.
 */
 void times_table(void);
+
+/**
+ * add - function that adds two integers and returns the result.
+ * @a : first number
+ * @b : second number
+ * Return: the sum of a and b
+*/
+int add(int a, int b);
 #endif
