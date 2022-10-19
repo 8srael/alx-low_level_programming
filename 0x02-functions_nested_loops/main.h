@@ -87,4 +87,13 @@ int add(int a, int b);
  * @n : parameter
 */
 void print_to_98(int n);
+
+/**
+ * print_times_table - function prints the n times table,
+ * starting with 0.
+ * If n is greater than 15 or less than 0,
+ * the function should not print anything.
+ * @n : the parameter
+*/
+void print_times_table(int n);
 #endif
