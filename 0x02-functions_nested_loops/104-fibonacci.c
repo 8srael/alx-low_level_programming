@@ -16,13 +16,13 @@ int main(void)
 
 	printf("%.0f, ", n1);
 	printf("%.0f, ", n2);
-	for (count = 2 ; count < 98 ; count++)
+	for (count = 2 ; count < 99 ; count++)
 	{
 		n3 = n1 + n2;
 		printf("%.0f", n3);
 		n1 = n2;
 		n2 = n3;
-		if (count != 97)
+		if (count != 98)
 			printf(", ");
 	}
 
