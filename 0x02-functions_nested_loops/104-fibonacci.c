@@ -3,27 +3,26 @@
 /**
  * main - fibonacci
  *
- * Return: 0 if program rins successfully.
+ * Return: 0 if program runs successfully.
 */
 
 int main(void)
 {
-	int count = 2;
+	int count = 0;
 
-	float a = 1;
-	float b = a + 1;
-	float c = a + b;
+	float n1 = 1;
+	float n2 = 2;
+	float n3;
 
-	printf("%.0f, ", a);
-	printf("%.0f, ", b);
-	while (count < 98)
+	printf("%.0f, ", n1);
+	printf("%.0f, ", n2);
+	for (count = 2 ; count < 98 ; count++)
 	{
-		count++;
-		printf("%.0f", c);
-		a = b;
-		b = c;
-		c = a + b;
-		if (count < 98)
+		n3 = n1 + n2;
+		printf("%.0f", n3);
+		n1 = n2;
+		n2 = n3;
+		if (count != 97)
 			printf(", ");
 	}
 
