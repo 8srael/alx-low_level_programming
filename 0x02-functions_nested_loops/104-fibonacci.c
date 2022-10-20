@@ -28,8 +28,8 @@ int main(void)
 	}
 
 	n1_head = n1 / 1000000000;
-	n2_tail = n2 % 1000000000;
-	n1_head = n1 / 1000000000;
+	n1_tail = n1 % 1000000000;
+	n2_head = n2 / 1000000000;
 	n2_tail = n2 % 1000000000;
 
 	for (count = 93 ; count < 99 ; count++)
