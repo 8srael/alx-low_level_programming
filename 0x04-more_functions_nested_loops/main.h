@@ -38,4 +38,12 @@ void print_numbers(void);
 */
 int _putchar(char c);
 
+/**
+ * print_most_numbers - function that prints the numbers, from 0 to 9,
+ * followed by a new line.
+ * Do not print 2 and 4
+ * use _putchar twice in code
+ */
+void print_most_numbers(void);
+
 #endif
