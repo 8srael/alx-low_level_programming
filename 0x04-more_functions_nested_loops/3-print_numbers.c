@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints alphabet in lowercase ,
- * followed by a new line
+ * print_numbers - prints the numbers,
+ * from 0 to 9, followed by a new line.
  * by using the function _putchar in main.h
  *
  * Return: 0 if program runs succesfully.
