@@ -10,19 +10,19 @@ int main(void)
 {
 	int count = 0;
 
-	float n1 = 1;
-	float n2 = 2;
-	float n3;
+	unsigned long n1 = 1;
+	unsigned long n2 = 2;
+	unsigned long n3;
 
-	printf("%.0f, ", n1);
-	printf("%.0f, ", n2);
-	for (count = 2 ; count < 99 ; count++)
+	printf("%lu, ", n1);
+	printf("%lu, ", n2);
+	for (count = 2 ; count < 98 ; count++)
 	{
 		n3 = n1 + n2;
-		printf("%.0f", n3);
+		printf("%lu", n3);
 		n1 = n2;
 		n2 = n3;
-		if (count != 98)
+		if (count != 97)
 			printf(", ");
 	}
 
