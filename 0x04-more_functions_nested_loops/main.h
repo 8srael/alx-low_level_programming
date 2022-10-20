@@ -57,8 +57,17 @@ void more_numbers(void);
  * print_line - function that draws a straight line in the terminal.
  * use only _putchar function to print
  * the line should end with a '\n'
- * if n is 0 or less, the function should only print \n
+ * if n is 0 or less, the function should only print '\n'
  * @n : number of times the character _ should be printed
 */
 void print_line(int n);
+
+/**
+ * print_diagonal - function that draws a diagonal line on the terminal
+ * use only _putchar function to print
+ * the diagonal should end with a '\n'
+ * if n is 0 or less, the function should only print a '\n'
+ * @n : number of times the character / should be printed
+*/
+void print_diagonal(int n);
 #endif
