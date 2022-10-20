@@ -67,7 +67,7 @@ void print_line(int n);
  * use only _putchar function to print
  * the diagonal should end with a '\n'
  * if n is 0 or less, the function should only print a '\n'
- * @n : number of times the character / should be printed
+ * @n : number of times the character \ should be printed
 */
 void print_diagonal(int n);
 #endif
