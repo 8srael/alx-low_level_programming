@@ -46,4 +46,10 @@ int _putchar(char c);
  */
 void print_most_numbers(void);
 
+/**
+ * more_numbers - function that prints 10 times the numbers,
+ * from 0 to 14, followed by a new line
+ * use _putchar three times in code
+ */
+void more_numbers(void);
 #endif
