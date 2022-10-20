@@ -70,4 +70,13 @@ void print_line(int n);
  * @n : number of times the character \ should be printed
 */
 void print_diagonal(int n);
+
+/**
+ * print_square - function that prints a square, followed by a new line
+ * use only _putchar function to print
+ * if size is 0 or less, the function should print only a new line
+ * use the character # to print the square
+ * @size : size of the square
+ */
+void print_square(int size);
 #endif
