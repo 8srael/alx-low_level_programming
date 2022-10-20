@@ -24,5 +24,18 @@ int _isdigit(int c);
 */
 int mul(int a, int b);
 
+/**
+ * print_numbers - function that prints the numbers, from 0 to 9,
+ * followed by a new line.
+ * use _putchar twice in code
+*/
+void print_numbers(void);
+
+/**
+ * _putchar - writes the character c
+ * @c: parameter that you want to print
+ * Return: 1 or 0
+*/
+int _putchar(char c);
 
 #endif
