@@ -89,4 +89,11 @@ void print_square(int size);
 */
 void print_triangle(int size);
 
+/**
+ * print_number - function that prints a integer
+ * use only _putchar function to print
+ * Don't use the type long
+ * @n : integer that we want to print
+*/
+void print_number(int n);
 #endif
