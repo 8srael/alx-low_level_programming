@@ -65,4 +65,13 @@ void rev_string(char *s);
  */
 void puts2(char *str);
 
+/**
+ * puts_half - function that prints half of a string,
+ * followed by a new line
+ * The function should print the second half of the string
+ *
+ * @str : string (array of char)
+ */
+void puts_half(char *str);
+
 #endif
