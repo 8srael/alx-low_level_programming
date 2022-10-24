@@ -40,4 +40,12 @@ int _strlen(char *s);
  *  @str : string (array of char)
  */
 void _puts(char *str);
+
+/**
+ * print_rev - function that prints a string, in reverse,
+ * followed by a new line
+ *
+ *  @s : string (array of char)
+ */
+void print_rev(char *s);
 #endif
