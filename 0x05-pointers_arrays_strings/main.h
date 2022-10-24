@@ -49,11 +49,20 @@ void _puts(char *str);
  */
 void print_rev(char *s);
 
-/*
+/**
  * rev_string - function that prints a string
  *
  * @s : string (array of char)
  */
 void rev_string(char *s);
+
+/**
+ * puts2 - function that prints every other character of a string,
+ * starting with the first character,
+ * followed by a new line
+ *
+ * @str : string (array of char)
+ */
+void puts2(char *str);
 
 #endif
