@@ -45,7 +45,15 @@ void _puts(char *str);
  * print_rev - function that prints a string, in reverse,
  * followed by a new line
  *
- *  @s : string (array of char)
+ * @s : string (array of char)
  */
 void print_rev(char *s);
+
+/*
+ * rev_string - function that prints a string
+ *
+ * @s : string (array of char)
+ */
+void rev_string(char *s);
+
 #endif
