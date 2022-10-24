@@ -33,4 +33,11 @@ void swap_int(int *a, int *b);
  * Return: the length of the string in param
  */
 int _strlen(char *s);
+
+/**
+ * _puts - function that prints a string, followed by a new line, to stdout
+ *
+ *  @str : string (array of char)
+ */
+void _puts(char *str);
 #endif
