@@ -13,7 +13,7 @@ int _atoi(char *s)
 {
 	int i, count, n_plus_moins, len;
 	unsigned int mul;
-	int integer;
+	unsigned int integer;
 
 	count = 0;
 	n_plus_moins = 0;
