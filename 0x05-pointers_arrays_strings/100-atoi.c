@@ -44,5 +44,6 @@ int _atoi(char *s)
 	else
 		integer *= -1;
 
+
 	return (integer);
 }
