@@ -11,8 +11,7 @@
 
 int _atoi(char *s)
 {
-	int i, count, n_moins, len;
-	int dig;
+	int i, count, n_moins, len, dig;
 	int integer;
 
 	i = 0;
@@ -35,7 +34,7 @@ int _atoi(char *s)
 			integer = integer * 10 + dig;
 			count = 1;
 
-			if (s[i + 1] < '0' || s[i + 1] > '9')
+			if (*(s + i + 1) < '0' || *(s + i + 1) > '9')
 				break;
 			count = 0;
 		}
