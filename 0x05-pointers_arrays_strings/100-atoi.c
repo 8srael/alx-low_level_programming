@@ -22,14 +22,14 @@ int _atoi(char *s)
 
 	for (i = 0 ; i < len ; i++)
 	{
-		if ((s[i] <= '/' || s[i] >= ':') && count > 0)
+		if (!(s[i] >= '0' && s[i] <= '9') && count > 0)
 			break;
 		if (s[i] == '-')
 			n_plus_moins--;
 		if (s[i] == '+')
 			n_plus_moins++;
 
-		if (s[i] > '/' && s[i] < ':')
+		if (s[i] >= '0' && s[i] <= '9')
 			count++;
 	}
 
