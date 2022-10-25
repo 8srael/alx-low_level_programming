@@ -11,41 +11,39 @@
 
 int _atoi(char *s)
 {
-	int i, count, n_plus_moins, len;
-	unsigned int mul;
-	unsigned int integer;
+	int i, count, n_moins, len;
+	int dig;
+	int integer;
 
+	i = 0;
 	count = 0;
-	n_plus_moins = 0;
+	n_moins = 0;
 	len = _strlen(s);
-	mul = 1;
+	dig = 0;
 	integer = 0;
 
-	for (i = 0 ; i < len ; i++)
+	while (i < len && count == 0)
 	{
-		if (!(s[i] >= '0' && s[i] <= '9') && count > 0)
-			break;
 		if (s[i] == '-')
-			n_plus_moins--;
-		if (s[i] == '+')
-			n_plus_moins++;
+			n_moins++;
 
-		if (s[i] >= '0' && s[i] <= '9')
-			count++;
+		if (s[i] > '/' && s[i] < ':')
+		{
+			dig = *(s + i) - '0';
+			if (n_moins % 2)
+				dig = -dig;
+			integer = integer * 10 + dig;
+			count = 1;
+
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			count = 0;
+		}
+		i++;
 	}
 
-	while (count > 0)
-	{
-		integer += ((s[i - 1] - '0') * mul);
-		i--;
-		count--;
-		mul = mul * 10;
-	}
-	if (n_plus_moins >= 0)
-		integer *= 1;
-	else
-		integer *= -1;
-
+	if (count == 0)
+		integer = 0;
 
 	return (integer);
 }
