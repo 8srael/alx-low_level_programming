@@ -27,8 +27,23 @@ int _strlen(char *s);
  * @dest : pointer to a char
  * @src : pointer to a char
  *
- * Return: the pointer to dest
+ * Return: a pointer to dest
  */
 char *_strcat(char *dest, char *src);
+
+/**
+ * _strncat - function that concatenates two strings
+ * the _strncat function is similar to the _strcat function,
+ * except that it will use at most n bytes from src;
+ * and src does not need to be null-terminated if it contains n or
+ * more bytes
+ *
+ *  @dest : pointer to a char
+ *  @src : pointer to a char
+ *  @n : number of bytes
+ *
+ *  Return: a pointer to dest
+ */
+char *_strncat(char *dest, char *src, int n);
 
 #endif
