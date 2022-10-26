@@ -14,7 +14,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int x,y;
+	int x, y;
 
 	x = _strlen(dest);
 	y = 0;
