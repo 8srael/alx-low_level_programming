@@ -1,6 +1,5 @@
 #include "main.h"
 #include "2-strlen.c"
-#include <stdio.h>
 
 /**
  * _strcmp - function that compares two strings
