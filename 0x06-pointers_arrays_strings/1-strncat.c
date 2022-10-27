@@ -1,7 +1,7 @@
 #include "main.h"
 #include "2-strlen.c"
 
-/**i
+/**
  * _strncat - function that concatenates two strings
  * with n bytes maximum
  *
@@ -16,14 +16,20 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int x, y;
 
-	x = _strlen(dest);
+	x = 0;
 	y = 0;
 
-	for (y = 0 ; *(src + y) !='\0' && y < n ; y++)
+	while (*(dest + x) != '\0')
+		x++;
+
+	while (*(src + y) != '\0' && y < n)
 	{
-		*(dest + x + y) = *(src + y);
+		*(dest + x) = *(src + y);
+		x++;
+		y++;
 	}
-	*(dest + x + y) = '\0';
+
+	*(dest + x) = '\0';
 
 	return (dest);
 }
