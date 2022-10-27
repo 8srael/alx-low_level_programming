@@ -1,6 +1,5 @@
 #include "main.h"
 #include "2-strlen.c"
-#include <stdio.h>
 
 /**
  * _strncpy - function that copies n bytes a string\
@@ -18,9 +17,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
-	int src_len;
-
-	src_len = _strlen(src);
+	int src_len = _strlen(src);
 
 	for (i = 0 ; i < src_len && i < n ; i++)
 		*(dest + i) = *(src + i);
@@ -30,7 +27,6 @@ char *_strncpy(char *dest, char *src, int n)
 		*(dest + i) = '\0';
 		i++;
 	}
-	*(dest + i) = '\0';
 
 	return (dest);
 }
