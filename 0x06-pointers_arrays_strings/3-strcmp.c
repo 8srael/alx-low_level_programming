@@ -12,17 +12,11 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_len;
-	int s2_len;
-	int num_spaces;
+	int i = 0;
 
-	s1_len = _strlen(s1);
-	s2_len = _strlen(s2);
+	while (*(s1 + i) - *(s2 + i) == 0 && *(s1 + i) != '\0')
+		i++;
 
-	if (s1_len == s2_len)
-		num_spaces = 0;
-	else
-		num_spaces = s1_len - s2_len;
 
-	return (num_spaces);
+	return (*(s1 + i) - *(s2 + i));
 }
