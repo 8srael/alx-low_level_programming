@@ -123,6 +123,15 @@ char *leet(char *s);
 char *rot13(char *s);
 
 /**
+ * rot13_char - function that encode a character using rot13
+ *
+ * @c : a character
+ *
+ * Return: character encrypted
+ */
+char rot13_char(char c);
+
+/**
  * print_number - function that prints an integer.
  *
  * @n : an integer
