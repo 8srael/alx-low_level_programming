@@ -103,4 +103,12 @@ int is_separator(char character);
  * Return: string with all words capitalized
  */
 char *cap_string(char *str);
+/**
+ * rot13 - function that encodes a string using rot13.
+ *
+ * @s : string
+ *
+ * Return: string encrypted
+ */
+char *rot13(char *s);
 #endif
