@@ -37,9 +37,10 @@ int is_separator(char character)
 {
 	int i, result;
 
-	char a[12] = {' ', '\t', '\n', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char a[13] = {' ', '\t', '\n', ';', ',', '.', '!', '?', '"',
+	'(', ')', '{', '}'};
 
-	for (i = 0 ; i < 12 ; i++)
+	for (i = 0 ; i < 13 ; i++)
 	{
 		if (a[i] == character)
 		{
