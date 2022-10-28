@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rot13 - function that encryptsstring using rot13
+ * rot13 - function that encrypts code
  *
  * @s : string
  *
@@ -10,45 +10,23 @@
 
 char *rot13(char *s)
 {
+	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
 	int i;
+	int j;
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
-		*(s + i) = rot13_char(*(s + i));
+		for (j = 0 ; part1[j] != '\0' ; j++)
+		{
+			if (s[i] == part1[j])
+			{
+				s[i] = part2[j];
+				break;
+			}
+		}
 	}
 
 	return (s);
-}
-
-/**
- * rot13_char - function that encodes a char using rot13
- *
- * @c : a character
- *
- * Return: character encrypted
- */
-
-char rot13_char(char c)
-{
-	int i = (int)c;
-
-	if (i >= 97 && i <= 122)
-	{
-		i = i + 13;
-		if (i > 122)
-		{
-			i = i - 122;
-			i = 97 + i - 1;
-		}
-	}
-	if (i >= 65 && i <= 90)
-	{
-		i = i + 13;
-		if (i > 90)
-		{
-			i = i - 90;
-			i = 65 + i - 1;
-		}
-	}
-	return (i);
 }
