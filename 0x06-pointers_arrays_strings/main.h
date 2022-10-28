@@ -121,4 +121,11 @@ char *leet(char *s);
  * Return: string encrypted
  */
 char *rot13(char *s);
+
+/**
+ * print_number - function that prints an integer.
+ *
+ * @n : an integer
+ */
+void print_number(int n);
 #endif
