@@ -22,7 +22,7 @@ char *rot13(char *s)
 		{
 			if (s[i] == part1[j])
 			{
-				s[i] = part2[j + 1];
+				s[i] = part2[j];
 				break;
 			}
 		}
