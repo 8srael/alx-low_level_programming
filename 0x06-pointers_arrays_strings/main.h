@@ -137,4 +137,33 @@ char rot13_char(char c);
  * @n : an integer
  */
 void print_number(int n);
+
+/**
+ * infinite_add - function that adds two numbers.
+ *
+ * @n1 : first number
+ * @n2 : second number
+ * @r : buffer for result
+ * @size_r: buffer size
+ *
+ * Return: the pointer to r or 0
+ */
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
+/**
+ * print_line - prints bytes of a buffer
+ *
+ * @b :  buffer to print
+ * @size : bytes of buffer to print
+ * @line : line of buffer to print
+ */
+void print_line(char *b, int size, int line);
+
+/**
+ * print_buffer - function that prints a buffer.
+ *
+ * @b : buffer to print
+ * @size : size of buffer
+ */
+void print_buffer(char *b, int size);
 #endif
