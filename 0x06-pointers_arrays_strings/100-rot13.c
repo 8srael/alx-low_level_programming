@@ -28,27 +28,27 @@ char *rot13(char *s)
  * Return: character encrypted
  */
 
-char rot13_char(char i)
+char rot13_char(char c)
 {
-	int c = (int)i;
+	int i = (int)c;
 
-	if (c >= 97 && c <= 122)
+	if (i >= 97 && i <= 122)
 	{
-		c = c + 13;
-		if (c > 122)
+		i = i + 13;
+		if (i > 122)
 		{
-			c = c - 122;
-			c = 97 + c - 1;
+			i = i - 122;
+			i = 97 + i - 1;
 		}
 	}
-	if (c >= 65 && c <= 90)
+	if (i >= 65 && i <= 90)
 	{
-		c = c + 13;
-		if (c > 90)
+		i = i + 13;
+		if (i > 90)
 		{
-       			c = c - 90;
-			c = 65 + c - 1;
+			i = i - 90;
+			i = 65 + i - 1;
 		}
 	}
-	return (c);
+	return (i);
 }
