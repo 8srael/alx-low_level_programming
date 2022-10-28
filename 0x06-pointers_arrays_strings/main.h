@@ -87,6 +87,15 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *s);
 
 /**
+ * is_separator - function that verify if a char is a separator
+ *
+ * @character : a character
+ *
+ * Return: 1 if it's the case, -1 otherwise
+ */
+int is_separator(char character);
+
+/**
  * cap_string - function that capitalizes all words of a string
  *
  * @str : string (array of char)
