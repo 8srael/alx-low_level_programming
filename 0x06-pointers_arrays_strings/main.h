@@ -103,6 +103,16 @@ int is_separator(char character);
  * Return: string with all words capitalized
  */
 char *cap_string(char *str);
+
+/*
+ * leet - function that encodes a string into 1337.
+ *
+ * @s : a string
+ *
+ * Return: string encoded
+ */
+char *leet(char *s);
+
 /**
  * rot13 - function that encodes a string using rot13.
  *
