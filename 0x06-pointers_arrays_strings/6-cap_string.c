@@ -19,9 +19,10 @@ char *cap_string(char *str)
 		if (i != 0)
 			is_sep = is_separator(*(str + i - 1));
 
-		if (is_sep && (*(str + i) >= '`' && *(str + i) <= '{'))
+		if (is_sep && (*(str + i) > '`' && *(str + i) < '{'))
 			*(str + i) = *(str + i) - 32;
 	}
+
 	return (str);
 }
 
