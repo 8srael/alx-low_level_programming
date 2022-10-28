@@ -69,19 +69,21 @@ char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
 
 /**
- * swap_int - function that swap two numbers
- *
- * @a : first number
- * @b : second number
- */
-void swap_int(int *a, int *b);
-
-/**
  * reverse_array - function that reverses the content of an array of int
  *
  * @a : array of int
  * @n : numbers of elemets of the array
  */
 void reverse_array(int *a, int n);
+
+/**
+ * string_upper - function that changes all lowercase letters
+ * of a string to uppercase.
+ *
+ * @s : string
+ *
+ * Return: string uppercase
+ */
+char *string_toupper(char *s);
 
 #endif
