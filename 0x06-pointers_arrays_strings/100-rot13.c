@@ -14,7 +14,7 @@ char *rot13(char *s)
 	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
 	int i;
-	int j = 0;
+	int j;
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
@@ -22,7 +22,7 @@ char *rot13(char *s)
 		{
 			if (s[i] == part1[j])
 			{
-				s[i] = part2[j];
+				s[i] = part2[j + 1];
 				break;
 			}
 		}
