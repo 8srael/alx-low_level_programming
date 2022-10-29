@@ -20,13 +20,13 @@ void print_buffer(char *b, int size)
 		if (x < size / 10)
 			print_line(b, 9, x);
 		else
-			print_line(b, (size % 10) - 1, x);
+			print_line(b, size % 10 - 1, x);
 
-		printf("\n");
+		putchar('\n');
 	}
 
 	if (size == 0)
-		printf("\n");
+		putchar('\n');
 }
 
 /**
