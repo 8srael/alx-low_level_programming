@@ -40,9 +40,9 @@ void print_line(char *b, int size, int line)
 {
 	int y, z;
 
-	for (y = 0 ; y <= 9 ; y++)
+	for (y = 0 ; y < 10 ; y++)
 	{
-		if (y <= size)
+		if (y < size + 1)
 			printf("%02x", *(b + line * 10 + y));
 		else
 			printf("  ");
@@ -50,7 +50,7 @@ void print_line(char *b, int size, int line)
 			putchar(' ');
 	}
 
-	for (z = 0 ; z <= size ; z++)
+	for (z = 0 ; z < size + 1 ; z++)
 	{
 		if (*(b + line * 10 + z) > 31 && *(b + line * 10 + z) < 127)
 			putchar(*(b + line * 10 + z));
