@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 #include <stdio.h>
 
 /**
@@ -20,7 +19,7 @@ void print_buffer(char *b, int size)
 		if (x < size / 10)
 			print_line(b, 9, x);
 		else
-			print_line(b, size % 10 - 1, x);
+			print_line(b, (size % 10) - 1, x);
 
 		putchar('\n');
 	}
@@ -41,17 +40,17 @@ void print_line(char *b, int size, int line)
 {
 	int y, z;
 
-	for (y = 0 ; y < 10 ; y++)
+	for (y = 0 ; y <= 9 ; y++)
 	{
 		if (y <= size)
 			printf("%02x", *(b + line * 10 + y));
 		else
 			printf("  ");
-		if (y % 2 == 0)
+		if (y % 2 != 0)
 			putchar(' ');
 	}
 
-	for (z = 0; z < size + 1 ; z++)
+	for (z = 0 ; z <= size ; z++)
 	{
 		if (*(b + line * 10 + z) > 31 && *(b + line * 10 + z) < 127)
 			putchar(*(b + line * 10 + z));
