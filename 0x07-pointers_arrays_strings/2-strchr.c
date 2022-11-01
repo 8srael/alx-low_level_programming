@@ -28,10 +28,10 @@ char *_strchr(char *s, char c)
 		first = malloc(i * sizeof(char));
 		j = 0;
 
-		for (j = i ; *(s + j) != '\0' ; j++)
-			*(first + j - i) = *(s + j);
+		for (j = 0 ; *(s + j) != '\0' ; j++)
+			*(first + j ) = *(s + j + i);
 
-		*(first + j - i) = '\0';
+		*(first + j) = '\0';
 	}
 
 	return (first);
