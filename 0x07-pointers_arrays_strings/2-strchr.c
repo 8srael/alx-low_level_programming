@@ -34,5 +34,8 @@ char *_strchr(char *s, char c)
 		*(first + j) = '\0';
 	}
 
+	if (c == '\0')
+		first = s;
+
 	return (first);
 }
