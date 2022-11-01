@@ -45,7 +45,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  *
  * @s : string
  * @c : character
- * 
+ *
  * Return: first occurence of char c in s , NULL if c isn't found
  */
 char *_strchr(char *s, char c);
