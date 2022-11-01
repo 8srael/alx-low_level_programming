@@ -8,3 +8,4 @@ ___This repository contains the projects below :___
 4. [0x04-more_functions_nested_loops](https://github.com/8srael/alx-low_level_programming/tree/main/0x04-more_functions_nested_loops)
 5. [0x05. C - Pointers, arrays and strings](https://github.com/8srael/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings)
 6. [0x06. C - More pointers, arrays and strings](https://github.com/8srael/alx-low_level_programming/tree/main/0x06-pointers_arrays_strings)
+7. [0x07. C - More pointers, arrays and strings](https://github.com/8srael/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings)
