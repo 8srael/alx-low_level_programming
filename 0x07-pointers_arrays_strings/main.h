@@ -89,4 +89,12 @@ char *_strstr(char *haystack, char *needle);
  */
 void print_chessboard(char (*a)[8]);
 
+/**
+ * set_strinf - function that sets the value of a pointer to a char
+ *
+ * @s : pointer to pointer
+ * @to : string to set
+ */
+void set_string(char **s, char *to);
+
 #endif
