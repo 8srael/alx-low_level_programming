@@ -24,5 +24,5 @@ void print_diagsums(int *a, int size)
 		right += *(a + diag_pos);
 	}
 
-	printf("%i, %i\n", l, r);
+	printf("%i, %i\n", left, right);
 }
