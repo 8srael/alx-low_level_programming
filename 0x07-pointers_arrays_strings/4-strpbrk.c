@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * _strchr - function that locates a character in a string.
+ * _strpbrk - function that searches a string for any of a set of bytes.
  *
  * @s : a string
- * @c : a character
+ * @accept : a string
  *
- * Return: a pointer to the first occurence of c in s, NULL if c isn't found
+ * Return: a pointer to the byte in s that matches one of the bytes in accept,
+ * or NULL if no such byte is found
 */
 
-char *_strchr(char *s, char c)
+char *_strpbrk(char *s, char *accept)
 {
 	int j;
 
@@ -19,7 +20,7 @@ char *_strchr(char *s, char c)
 
 		for (j = 0 ; accept[j] ; j++)
 		{
-			if(*s == accept[i])
+			if (*s == accept[i])
 				return (s);
 		}
 		s++;
