@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * _strstr - function that locates a string
@@ -19,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 
 		while (*(needle + j) != '\0' && (*(haystack + i) == *needle))
 		{
-			if (haystack[i + j] == needle[j])
+			if (*(haystack + i + j) == *(needle + j))
 				j++
 			else
 				break;
@@ -32,5 +31,5 @@ char *_strstr(char *haystack, char *needle)
 		else
 			return (haystack + i);
 	}
-	return (NULL);
+	return (0);
 }
