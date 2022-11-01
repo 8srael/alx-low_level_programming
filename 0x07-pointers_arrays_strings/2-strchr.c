@@ -24,11 +24,15 @@ char *_strchr(char *s, char c)
 	if (i == 0)
 		first = NULL;
 	else
+	{
 		first = malloc(i * sizeof(char));
-	j = 0;
+		j = 0;
 
-	for (j = i ; *(s + j) != '\0' ; j++)
-		*(first + j - i) = *(s + j);
+		for (j = i ; *(s + j) != '\0' ; j++)
+			*(first + j - i) = *(s + j);
+
+		*(first + j - i) = '\0';
+	}
 
 	return (first);
 }
