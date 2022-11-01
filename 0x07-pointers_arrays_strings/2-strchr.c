@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
 
 /**
@@ -13,29 +12,18 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i, j;
-	char *first;
 
-	i = 0;
-
-	for (i = 0 ; *(s + i) != c ; i++)
-	{}
-
-	if (i == 0)
-		first = NULL;
-	else
+	while (*s != '\0')
 	{
-		first = malloc(i * sizeof(char));
-		j = 0;
+		if (*s != c)
+			s++;
+		else
+			return (s);
 
-		for (j = 0 ; *(s + j) != '\0' ; j++)
-			*(first + j ) = *(s + j + i);
-
-		*(first + j) = '\0';
 	}
 
 	if (c == '\0')
-		first = s;
+		return (s);
 
-	return (first);
+	return (NULL);
 }
