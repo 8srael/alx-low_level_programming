@@ -82,4 +82,11 @@ char *_strpbrk(char *s, char *accept);
  */
 char *_strstr(char *haystack, char *needle);
 
+/**
+ * print_chessboard - function that prints the chessboard
+ *
+ * @a : 2D array
+ */
+void print_chessboard(char (*a)[8]);
+
 #endif
