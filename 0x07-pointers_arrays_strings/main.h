@@ -21,7 +21,7 @@ int _strlen(char *s);
 /**
  * _memset - function that fills memory with a constant byte.
  *
- * @s : string
+ * @s : pointer to memory address
  * @b : constant byte
  * @n : number of bytes
  *
@@ -32,12 +32,22 @@ char *_memset(char *s, char b, unsigned int n);
 /**
  * _memcpy - function that copies memory area.
  *
- * @dest : destination
- * @src : source
+ * @dest : pointer to destination
+ * @src : point to source
  * @n : number of bytes that we want to copy
  *
  * Return: a pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
+
+/**
+ * _strchr - function that locates a character in a string
+ *
+ * @s : string
+ * @c : character
+ * 
+ * Return: first occurence of char c in s , NULL if c isn't found
+ */
+char *_strchr(char *s, char c);
 
 #endif
