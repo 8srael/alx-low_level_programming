@@ -59,6 +59,15 @@ char *_strchr(char *s, char c);
  * which consist only of bytes from accept
  */
 unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);`
+
+/**
+ * _strprbrk -  function that searches a string for any of a set of bytes.
+ *
+ * @s : a string
+ * @accept : another string
+ *
+ * Return: a pointer to the byte in s ...
+ */
+char *_strpbrk(char *s, char *accept);
 
 #endif
