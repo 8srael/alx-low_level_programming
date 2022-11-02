@@ -24,4 +24,11 @@ int _strlen(char *s);
  * @s : string to print
  */
 void _puts_recursion(char *s);
+
+/**
+ * _print_rev_recursion - function that prints a string in reverse
+ *
+ * @s : a string (array of char)
+ */
+void _print_rev_recursion(char *s);
 #endif
