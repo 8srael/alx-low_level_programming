@@ -16,7 +16,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, number;
+	int *p;
 	int sum = 0;
 
 	if (argc < 2)
@@ -25,15 +26,16 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 1 ; *(argv + i) ; i++)
+	for (i = 1 ; argc ; i++)
 	{
-		if (*(argv + i)[0] >= 58 || *(argv + i)[0] <= 47)
+		number = strtol(*(argv + i), &p, 10);
+		if (*p)
 		{
 			printf("Error\n");
 			return (1);
 		}
 		else
-			sum += atoi(*(argv + i));
+			sum += number;
 	}
 	printf("%d\n", sum);
 
