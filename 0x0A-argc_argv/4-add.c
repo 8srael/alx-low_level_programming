@@ -17,7 +17,7 @@
 int main(int argc, char *argv[])
 {
 	int i, number;
-	int *p;
+	char *p;
 	int sum = 0;
 
 	if (argc < 2)
