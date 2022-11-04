@@ -2,6 +2,26 @@
 #include <stdlib.h>
 
 /**
+ * is_dig - checck that arg is a number
+ *
+ * @arg : a string
+ *
+ * Return: 1 if entire string is a number, 0 otherwise
+ */
+
+int is_dig(char *arg)
+{
+	int d;
+
+	for (d = 0 ; *(arg + d) != '\0' ; d++)
+	{
+		if (*(arg + d) <= 47 || *(arg + d) >= 58)
+			return (0);
+	}
+	return (1);
+}
+
+/**
  * main - add positive numbers
  *
  * @argc : number of arguments supplied to the prog
@@ -16,8 +36,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, number;
-	char *p;
+	int i;
 	int sum = 0;
 
 	if (argc < 2)
@@ -28,8 +47,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1 ; i < argc ; i++)
 	{
-		number = strtol(*(argv + i), &p, 10);
-		if (*p)
+		if (is_dig(*(argv + i)) == 0)
 		{
 			printf("Error\n");
 			return (1);
