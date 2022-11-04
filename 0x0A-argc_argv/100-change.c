@@ -41,7 +41,6 @@ int main(int argc, char *argv[])
 	money = money % 2;
 
 	coins += money / 1;
-	money = money % 1;
 
 	printf("%d\n", coins);
 
