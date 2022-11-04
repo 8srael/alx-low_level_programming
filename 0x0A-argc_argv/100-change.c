@@ -12,39 +12,30 @@
  * Return: 0.
 */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int money;
-	int coins = 0;
+	int n, coins = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
 	if (argv[1][0] == '-')
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
-
-	money = atoi(*(argv + 1));
-
-	coins += money / 25;
-	money = money % 25;
-
-	coins += money / 10;
-	money = money % 10;
-
-	coins += money / 5;
-	money = money % 5;
-
-	coins += money / 2;
-	money = money % 2;
-
-	coins += money / 1;
-
+	n = atoi(argv[1]);
+	coins += n / 25;
+	n = n % 25;
+	coins += n / 10;
+	n = n % 10;
+	coins += n / 5;
+	n = n % 5;
+	coins += n / 2;
+	n = n % 2;
+	coins += n / 1;
 	printf("%d\n", coins);
 	return (0);
 }
