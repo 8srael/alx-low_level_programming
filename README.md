@@ -10,3 +10,5 @@ ___This repository contains the projects below :___
 6. [0x06. C - More pointers, arrays and strings](https://github.com/8srael/alx-low_level_programming/tree/main/0x06-pointers_arrays_strings)
 7. [0x07. C - More pointers, arrays and strings](https://github.com/8srael/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings)
 8. [0x08. C - Recursion](https://github.com/8srael/alx-low_level_programming/tree/main/0x08-recursion)
+9. [0x09. C - Static libraries](https://github.com/8srael/alx-low_level_programming/tree/main/0x09-static_libraries)
+10. [0x0A. C - argc, argv](https://github.com/8srael/alx-low_level_programming/tree/main/0x0A-argc_argv)
