@@ -19,6 +19,12 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 
+	if (argc == 1)
+	{
+		printf("%d\n", sum);
+		return (0);
+	}
+
 	for (i = 1 ; i < argc ; i++)
 	{
 		if (*(argv + i)[0] >= 58 || *(argv + i)[0] <= 47)
