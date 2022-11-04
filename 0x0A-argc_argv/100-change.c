@@ -24,7 +24,10 @@ int main(int argc, char *argv[])
 	}
 
 	if (*(argv + 1)[0] == '-')
+	{
 		printf("0\n");
+		return(0);
+	}
 
 	money = atoi(*(argv + 1));
 
