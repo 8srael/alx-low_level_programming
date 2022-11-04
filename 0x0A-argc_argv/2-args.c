@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - prints all arguments that the program receives
  *
  * @argc : number of arguments supplied to the prog
  * argc is an integer
