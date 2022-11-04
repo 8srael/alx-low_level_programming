@@ -8,7 +8,7 @@
  * @argv : array of pointers to the strings which are those args
  * argv is an array of pointers of char (string array)
  *
- * Return: Always 0.
+ * Return: 0.
 */
 
 int main(int argc, char **argv)
