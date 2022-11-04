@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 		else
-			sum += number;
+			sum += atoi(*(argv + i));
 	}
 	printf("%d\n", sum);
 
