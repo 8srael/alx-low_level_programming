@@ -19,6 +19,18 @@ int _putchar(char c);
 int _strlen(char *s);
 
 /**
+ * _strcpy - function that copies the string pointed to by src,
+ * including the terminating null byte (\0),
+ * to the buffer pointed to by dest .
+ *
+ * @dest : a pointer to a char
+ * @src : string (array of char)
+ *
+ * Return: the pointer to dest
+ */
+char *_strcpy(char *dest, char *src);
+
+/**
  * create_array - function that creates an array of chars,
  * and initializes it with a specific char.
  *
