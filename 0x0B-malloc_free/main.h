@@ -21,10 +21,10 @@ int _strlen(char *s);
 /**
  * _strcpy - function that copies the string pointed to by src,
  * including the terminating null byte (\0),
- * to the buffer pointed to by dest .
+ * to the buffer pointed to by dest
  *
  * @dest : a pointer to a char
- * @src : string (array of char)
+ * @src : a string
  *
  * Return: the pointer to dest
  */
