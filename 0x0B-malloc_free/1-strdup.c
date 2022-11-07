@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	wrapper = (char *) malloc((sizeof(char) * _strlen(str)));
+	wrapper = (char *) malloc((sizeof(char) * _strlen(str)) + 1);
 
 	if (wrapper == NULL)
 		return (NULL);
