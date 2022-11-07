@@ -29,4 +29,16 @@ int _strlen(char *s);
  * NULL if size = 0 and if it fails
  */
 char *create_array(unsigned int size, char c);
+
+/*
+ * _strdup - function that returns a pointer to a newly allocated space
+ * in memory, which contains a copy of the string given as a parameter
+ *
+ * @str : a string
+ *
+ * Return: a pointer to the duplicated string
+ * NULL if str = NULL or insufficient memory
+ */
+char *_strdup(char *str);
+
 #endif
