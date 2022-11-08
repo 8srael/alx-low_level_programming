@@ -28,18 +28,7 @@ int _strlen(char *s);
  *
  * Return: the pointer to dest
  */
-char *_strcpy(char *dest, char *src);
 
-/**
- * create_array - function that creates an array of chars,
- * and initializes it with a specific char.
- *
- * @size : array size
- * @c : a character
- *
- * Return: a pointer to the array
- * NULL if size = 0 and if it fails
- */
 char *create_array(unsigned int size, char c);
 
 /*
