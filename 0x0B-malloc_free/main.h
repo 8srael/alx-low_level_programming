@@ -19,16 +19,15 @@ int _putchar(char c);
 int _strlen(char *s);
 
 /**
- * _strcpy - function that copies the string pointed to by src,
- * including the terminating null byte (\0),
- * to the buffer pointed to by dest
+ * create_array - function that creates an array of chars,
+ * and initializes it with a specific char
  *
- * @dest : a pointer to a char
- * @src : a string
+ * @size: size of the array
+ * @c : a character
  *
- * Return: the pointer to dest
+ * Return: a pointer to the array
+ * NULL if size = 0 and if it fails
  */
-
 char *create_array(unsigned int size, char c);
 
 /*
@@ -53,4 +52,21 @@ char *_strdup(char *str);
  */
 char *str_concat(char *s1, char *s2);
 
+/**
+ * alloc_grid - function that allocates a grid
+ *
+ * @width : width of the grid
+ * @height : height of the grid
+ *
+ * Return: pointer to a 2 dimensional array of integers.
+ */
+int **alloc_grid(int width, int height);
+
+/**
+ * free_grid - function that frees a 2 dimensional grid
+ *
+ * @grid: the grid to print
+ * @height: height of the grid
+ */
+void free_grid(int **grid, int height);
 #endif
