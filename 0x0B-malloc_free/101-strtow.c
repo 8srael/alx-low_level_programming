@@ -12,7 +12,7 @@ char **strtow(char *str)
 {
 	int i, flag, len;
 	char **words;
-	
+
 	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
 		return (NULL);
 	i = flag = len = 0;
@@ -45,6 +45,7 @@ char **strtow(char *str)
 void util(char **words, char *str)
 {
 	int i, j, start, flag;
+
 	i = j = flag = 0;
 	while (str[i])
 	{
@@ -75,6 +76,7 @@ void util(char **words, char *str)
 void create_word(char **words, char *str, int start, int end, int index)
 {
 	int i, j;
+
 	i = end - start;
 	words[index] = (char *)malloc(sizeof(char) * (i + 1));
 	for (j = 0; start < end; start++, j++)
