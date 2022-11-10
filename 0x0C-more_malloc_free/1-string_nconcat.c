@@ -35,7 +35,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (final_string == NULL)
 		return (NULL);
 
-	strcat(final_string, s1);
+	for (k = 0; k < i; k++)
+		*(final_string + k) = *(s1 + k);
 
 	for (k = 0; k < j; k++)
 		*(final_string + k + i) = *(s2 + k);
