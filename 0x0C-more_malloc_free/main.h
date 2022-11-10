@@ -33,6 +33,8 @@ void *malloc_checked(unsigned int b);
  * @s1 : dest string
  * @s2 : src string
  * @n : unsigned int
+ *
+ * Return: pointer to a newly allocated space in memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 
