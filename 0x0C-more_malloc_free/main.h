@@ -27,4 +27,19 @@ int _strlen(char *s);
  */
 void *malloc_checked(unsigned int b);
 
+/**
+ * string_nconcat - function that concatenates two strings
+ *
+ * @s1 : dest string
+ * @s2 : src string
+ * @n : unsigned int
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+
+void *_calloc(unsigned int nmemb, unsigned int size);
+
+int *array_range(int min, int max);
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
 #endif
