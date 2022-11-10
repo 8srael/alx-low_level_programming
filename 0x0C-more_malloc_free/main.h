@@ -26,4 +26,5 @@ int _strlen(char *s);
  * Return: a pointer to the allocated memory
  */
 void *malloc_checked(unsigned int b);
+
 #endif
