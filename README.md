@@ -14,3 +14,5 @@ ___This repository contains the projects below :___
 10. [0x0A. C - argc, argv](https://github.com/8srael/alx-low_level_programming/tree/main/0x0A-argc_argv)
 11. [0x0B. C - malloc, free](https://github.com/8srael/alx-low_level_programming/tree/main/0x0B-malloc_free)
 12. [0x0C. C - More malloc, free](https://github.com/8srael/alx-low_level_programming/tree/main/0x0C-more_malloc_free)
+13. [0x0D. C - Preprocessor](https://github.com/8srael/alx-low_level_programming/tree/main/0x0C-more_malloc_free/0x0D-preprocessor)
+14.  [0x0E. C - Structures, typedef](https://github.com/8srael/alx-low_level_programming/tree/main/0x0E-structures_typedef)
