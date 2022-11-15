@@ -7,12 +7,13 @@
  * @d : pointer to a struct
  */
 
-void free_dog(struct dog *d)
+void free_dog(struct dog_t *d)
 {
 	if (d != NULL)
 	{
 		free(d->name);
 		free(d->owner);
 		free(d);
+
 	}
 }
