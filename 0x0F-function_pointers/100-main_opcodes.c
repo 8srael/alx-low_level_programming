@@ -9,8 +9,10 @@
  *
  */
 int main(int argc, char *argv[])
-{  char *opc = (char *) main;
+{
+	char *opc = (char *) main;
 	int i, nbytes;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
