@@ -61,35 +61,31 @@ void _printstring(va_list list_args)
  * @format :  list of types of arguments passed to the function
  *
  */
-
 void print_all(const char * const format, ...)
 {
-	unsigned int x, y = 0;
+	unsigned int x, y;
 	va_list arguments;
-	char *separator = "";
+	char *separator;
 
-	datatype choice[] = { { 'c', _printchar},
-		{ 'i', _printint},
-		{ 'f', _printfloat},
-		{ 's', _printstring},
-		{'\0', NULL} };
+	datatype choice[] = { { "c", _printchar},
+		{ "i", _printint},
+		{ "f", _printfloat},
+		{ "s", _printstring}};
 
+	x = 0;
+	separator = "";
 	va_start(arguments, format);
 
-	while (format != NULL && format[y] != '\0')
+	while (format != NULL && format[x / 4] != '\0')
 	{
-		x = 0;
-		while (choice[x].type != '\0')
+		y = x % 4;
+		if (choice[y].type[0] == format[x / 4])
 		{
-			if (choice[x].type == format[y])
-			{
-				printf("%s", separator);
-				choice[x].func(arguments);
-				separator = ", ";
-			}
-			++x;
+			printf("%s", separator);
+			choice[y].func(arguments);
+			separator = ", ";
 		}
-		++y;
+		++x;
 	}
 	va_end(arguments);
 	printf("\n");
