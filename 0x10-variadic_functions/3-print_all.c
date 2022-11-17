@@ -87,7 +87,7 @@ void print_all(const char * const format, ...)
 				choice[x].func(arguments);
 				separator = ", ";
 			}
-			x++;
+			++x;
 		}
 		++y;
 	}
