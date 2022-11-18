@@ -48,7 +48,7 @@ void _printstring(va_list list_args)
 
 	if (str == NULL)
 	{
-		print("(nil)");
+		printf("(nil)");
 		return;
 	}
 
