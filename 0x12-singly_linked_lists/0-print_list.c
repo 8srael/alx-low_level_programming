@@ -1,5 +1,7 @@
- #include "lists.h"
-#include  <tdio.h>
+#include "lists.h"
+#include <stdio.h>
+
+
 
 /**
  * print_list - prints all of the elements of a linked list.
@@ -9,19 +11,18 @@
 
 size_t print_list(const list_t *h)
 {
-	int x;
+	int count = 0;
 
-	if (h == NULL)
-		return (0);
-	for (x = 1; h->next != NULL; x++)
+	while (h)
 	{
 		if (h->str == NULL)
-			printf("[%u] %s\n", h->len, "(nil)");
+			printf("[0] (nil)\n");
 		else
-			printf("[%u] %s\n", h->len, h->str);
-		h = h->next;
+		{
+			printf("[%d] %s\n", h->len, h->str);
+			count++;
+			h = h->next;
+		}
 	}
-	printf("[%u] %s\n", h->len, h->str);
-
-	return (x);
+	return (count);
 }
