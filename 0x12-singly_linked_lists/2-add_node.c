@@ -4,8 +4,9 @@
 #include <string.h>
 
 /**
- * add_node - new node at the beginning of a list_t list.
- * @*head: head of a list_t list.
+ * add_node - new node at the beginning of a list_t list
+ *
+ * @head: head of a list_t list.
  * @str: value to insert into element.
  *
  * Return: number of elements in a linked list_t list.
