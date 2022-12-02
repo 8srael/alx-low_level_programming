@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _power - function that calculates (base and power)
@@ -28,27 +26,26 @@ unsigned long int _power(unsigned int b, unsigned int p)
  * @n: number
  *
  */
-
 void print_binary(unsigned long int n)
 {
-	unsigned long int x, result;
+	unsigned long int dev, result;
 	char flag = 0;
 
-	x = _power(2, sizeof(unsigned long int) * 8 - 1);
+	dev = _power(2, sizeof(unsigned long int) * 8 - 1);
 
-	while (x != 0)
+	while (dev != 0)
 	{
-		result = n & x;
-		if (result == x)
+		result = n & dev;
+		if (result == dev)
 		{
 			flag = 1;
 			_putchar('1');
 		}
-		else if (flag == 1 || x == 1)
+		else if (flag == 1 || dev == 1)
 		{
 			_putchar('0');
 		}
 
-		x >>= 1;
+		dev >>= 1;
 	}
 }
