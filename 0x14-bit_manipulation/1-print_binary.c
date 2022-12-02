@@ -46,7 +46,7 @@ void print_binary(unsigned long int n)
 		}
 		else if (flag == 1 || x == 1)
 		{
-			_putchar('0);
+			_putchar('0');
 		}
 
 		x >>= 1;
