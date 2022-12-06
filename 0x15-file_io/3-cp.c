@@ -1,4 +1,5 @@
 #include "main.h"
+
 #define MAXSIZE 1204
 #define SE STDERR_FILENO
 
@@ -15,7 +16,9 @@ int main(int ac, char *av[])
 {
 	int input_fd, output_fd, istatus, ostatus;
 	char buf[MAXSIZE];
-	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+	mode_t mode;
+
+	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	if (ac != 3)
 		dprintf(SE, "Usage: cp file_from file_to\n"), exit(97);
@@ -50,6 +53,7 @@ int main(int ac, char *av[])
 	if (istatus == -1)
 		dprintf(SE, "Error: Can't close fd %d\n", input_fd), exit(100);
 	ostatus = close(output_fd);
+
 	if (ostatus == -1)
 		dprintf(SE, "Error: Can't close fd %d\n", output_fd), exit(100);
 
