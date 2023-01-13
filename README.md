@@ -22,3 +22,4 @@ ___This repository contains the projects below :___
 18. [0x13. C - More singly linked lists](https://github.com/8srael/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)
 19. [0x14. C - Bit manipulation](https://github.com/8srael/alx-low_level_programming/tree/main/0x14-bit_manipulation)
 20. [0x15. C - File I/O](https://github.com/8srael/alx-low_level_programming/tree/main/0x15-file_io)
+21. [0x17. C - Doubly linked lists](https://github.com/8srael/alx-low_level_programming/tree/main/0x17-doubly_linked_lists)
