@@ -12,13 +12,13 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *tmp;
 	char flag = 0; /* 0 while no data has been printed yet */
 
-	if (!ht || !ht->array)
+	if (ht == NULL || ht->array == NULL)
 		return;
 	printf("{");
-	for (index = 0; index < ht->size; index++)
+	for (i = 0; i < ht->size; i++)
 	{
-		tmp = *(ht->array + index);
-		while (tmp) /* tmp is the next element of the hashtable */
+		tmp = ht->array[i];
+		while (tmp != NULL)
 		{
 			if (flag == 1)
 				printf(", ");
