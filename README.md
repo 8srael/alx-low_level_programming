@@ -26,3 +26,4 @@ ___This repository contains the projects below :___
 22. [0x18. C - Dynamic libraries](https://github.com/8srael/alx-low_level_programming/tree/main/0x18-dynamic_libraries)
 23. [0x1A. C - Hash tables](https://github.com/8srael/alx-low_level_programming/tree/main/0x1A-hash_tables)
 24. [0x1C. C - Makefiles](https://github.com/8srael/alx-low_level_programming/tree/main/0x1C-makefiles)
+25. [0x1E. C - Search Algorithms](https://github.com/8srael/alx-low_level_programming/tree/main/0x1E-search_algorithms)
